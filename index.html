@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>DG VFX — IA, 3D e VFX para vídeos publicitários</title>
+  <meta name="description" content="Criação de vídeos publicitários com Inteligência Artificial, 3D, VFX e pós-produção. FOOH, CGI, motion design e conteúdo visual para redes sociais. DG VFX — @dg_vfx." />
+  <meta name="keywords" content="vídeos com IA, inteligência artificial publicidade, FOOH Brasil, VFX vídeo, 3D publicidade, motion design, vídeos redes sociais, CGI Brasil, edição de vídeo profissional, produção audiovisual IA, DG VFX" />
+  <meta name="author" content="DG VFX" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dgvfx.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dgvfx.com" />
+  <meta property="og:title" content="DG VFX — IA, 3D e VFX para vídeos que param o scroll" />
+  <meta property="og:description" content="Criação de vídeos publicitários com Inteligência Artificial, 3D e VFX. Conteúdo visual de alto impacto para marcas, agências e redes sociais." />
+  <meta property="og:image" content="https://dgvfx.com/assets/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DG VFX — IA, 3D e VFX para vídeos publicitários" />
+  <meta name="twitter:description" content="Criação de vídeos publicitários com IA, 3D e VFX. Conteúdo visual de alto impacto para marcas e redes sociais." />
+  <meta name="twitter:image" content="https://dgvfx.com/assets/og-image.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://dgvfx.com/#person",
+        "name": "DG VFX",
+        "alternateName": "DG",
+        "url": "https://dgvfx.com",
+        "sameAs": [
+          "https://www.instagram.com/dg_vfx"
+        ],
+        "knowsAbout": ["Inteligência Artificial", "VFX", "3D", "FOOH", "Motion Design", "Edição de Vídeo", "Pós-produção"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://dgvfx.com/#service",
+        "name": "DG VFX",
+        "description": "Criação de vídeos publicitários com Inteligência Artificial, 3D, VFX e pós-produção para marcas e redes sociais.",
+        "url": "https://dgvfx.com",
+        "provider": { "@id": "https://dgvfx.com/#person" },
+        "areaServed": "BR",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Criação Visual",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Video", "description": "Criação de vídeos com Inteligência Artificial para campanhas e conteúdos digitais"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "FOOH / CGI", "description": "Vídeos publicitários com elementos 3D integrados a imagens reais"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "3D", "description": "Modelagem, lookdev, iluminação, animação e renderização"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "VFX", "description": "Composição, tracking, integração de elementos digitais e pós-produção"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Video Editing", "description": "Edição, ritmo, color grading e finalização"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Creative", "description": "Criação de imagens, packshots e conteúdo experimental com IA"}}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#080808" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="DG VFX — Início">
+        <span class="nav__logo-text">DG</span>
+        <span class="nav__logo-tag">VFX</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a href="#portfolio" class="nav__link">Portfólio</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#processo" class="nav__link">Processo</a>
+      </nav>
+
+      <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--nav" aria-label="Falar via WhatsApp">
+        Falar sobre um projeto
+      </a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+      <nav>
+        <a href="#portfolio" class="nav__mobile-link">Portfólio</a>
+        <a href="#servicos" class="nav__mobile-link">Serviços</a>
+        <a href="#sobre" class="nav__mobile-link">Sobre</a>
+        <a href="#processo" class="nav__mobile-link">Processo</a>
+      </nav>
+      <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--primary nav__mobile-cta">
+        Falar sobre um projeto
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero" aria-label="Apresentação">
+    <div class="hero__bg">
+      <video
+        class="hero__video"
+        autoplay muted loop playsinline
+        preload="metadata"
+        aria-hidden="true"
+        poster="assets/poster-hero.jpg"
+      >
+        <source src="videos/fooh-cheetos.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal-up">
+        <span class="dot"></span>
+        IA · 3D · VFX · Publicidade
+      </div>
+
+      <h1 class="hero__title reveal-up">
+        Vídeos que fazem<br />
+        <em>sua marca parar<br />o scroll</em>
+      </h1>
+
+      <p class="hero__sub reveal-up">
+        Combino Inteligência Artificial, 3D e VFX para criar peças publicitárias<br class="br-desktop" />
+        visualmente impactantes — do conceito ao vídeo final.
+      </p>
+
+      <div class="hero__ctas reveal-up">
+        <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar sobre um projeto
+        </a>
+        <a href="#portfolio" class="btn btn--ghost">
+          Ver portfólio
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section class="portfolio" id="portfolio" aria-label="Portfólio de projetos">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="section-tag">Portfólio</span>
+        <h2 class="section-title">Projetos em destaque</h2>
+        <p class="section-sub">Do conceito à entrega — vídeos que trabalham pela marca.</p>
+      </div>
+
+      <!-- Featured row: CHEETOS + BALLENTINES -->
+      <div class="portfolio__featured">
+        <article class="portfolio-card portfolio-card--featured" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video
+              class="portfolio-card__video"
+              muted loop playsinline
+              preload="none"
+              data-src="videos/fooh-cheetos.mp4"
+              poster="assets/poster-cheetos.jpg"
+              aria-label="FOOH Cheetos — vídeo do projeto"
+            ></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">FOOH</span>
+              <span class="portfolio-card__tag">3D</span>
+              <span class="portfolio-card__tag">VFX</span>
+              <span class="portfolio-card__tag">Social Media</span>
+            </div>
+            <h3 class="portfolio-card__title">FOOH Cheetos</h3>
+            <p class="portfolio-card__desc">Peça publicitária que integra elementos 3D ao mundo real com alto impacto visual — desenvolvida para dominar o feed e gerar engajamento orgânico nas redes sociais.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--featured" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video
+              class="portfolio-card__video"
+              muted loop playsinline
+              preload="none"
+              data-src="videos/fooh-ballentines.mp4"
+              poster="assets/poster-ballentines.jpg"
+              aria-label="FOOH Ballentines — vídeo do projeto"
+            ></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">FOOH</span>
+              <span class="portfolio-card__tag">CGI</span>
+              <span class="portfolio-card__tag">Composição</span>
+              <span class="portfolio-card__tag">Social Media</span>
+            </div>
+            <h3 class="portfolio-card__title">FOOH Ballantine's</h3>
+            <p class="portfolio-card__desc">Ativação de marca em formato FOOH com composição 3D integrada ao ambiente real. Visual de produção comercial criado para plataformas digitais.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Grid: demais projetos -->
+      <div class="portfolio__grid">
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/fooh-cartier.mp4" poster="assets/poster-cartier.jpg" aria-label="FOOH Cartier — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">FOOH</span>
+              <span class="portfolio-card__tag">Luxo</span>
+            </div>
+            <h3 class="portfolio-card__title">FOOH Cartier</h3>
+            <p class="portfolio-card__desc">Ativação de marca de luxo com integração 3D e estética premium para conteúdo digital.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/fooh-louis-vuitton.mp4" poster="assets/poster-lv.jpg" aria-label="FOOH Louis Vuitton — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">FOOH</span>
+              <span class="portfolio-card__tag">CGI</span>
+            </div>
+            <h3 class="portfolio-card__title">FOOH Louis Vuitton</h3>
+            <p class="portfolio-card__desc">Criação FOOH com elementos 3D de alta complexidade integrados a footage real para campanha digital.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/dia-namorados-boticario.mp4" poster="assets/poster-boticario.jpg" aria-label="Dia dos Namorados O Boticário — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">Cinematic</span>
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">VFX</span>
+            </div>
+            <h3 class="portfolio-card__title">O Boticário — Dia dos Namorados</h3>
+            <p class="portfolio-card__desc">Vídeo conceitual para campanha de data comemorativa com geração de imagens por IA e composição cinematográfica.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/nike-found-your-treasure.mp4" poster="assets/poster-nike.jpg" aria-label="Nike — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">Cinematic</span>
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">VFX</span>
+            </div>
+            <h3 class="portfolio-card__title">Nike — Found Your Treasure</h3>
+            <p class="portfolio-card__desc">Peça publicitária conceitual com produção visual em IA e VFX para exploração criativa da marca.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/legacy-energy-drink.mp4" poster="assets/poster-legacy.jpg" aria-label="Legacy Energy Drink — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">Motion</span>
+              <span class="portfolio-card__tag">Ad</span>
+            </div>
+            <h3 class="portfolio-card__title">Legacy Energy Drink</h3>
+            <p class="portfolio-card__desc">Anúncio com visual de produto gerado por IA e animação para campanha digital.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/fooh-kitkat.mp4" poster="assets/poster-kitkat.jpg" aria-label="FOOH KitKat — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">FOOH</span>
+              <span class="portfolio-card__tag">VFX</span>
+              <span class="portfolio-card__tag">Social Media</span>
+            </div>
+            <h3 class="portfolio-card__title">FOOH KitKat</h3>
+            <p class="portfolio-card__desc">Ativação FOOH com produto integrado ao ambiente real para conteúdo social de alto impacto.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/ad-agua-da-pedra.mp4" poster="assets/poster-agua.jpg" aria-label="Água da Pedra 3D Ad — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">Produto</span>
+              <span class="portfolio-card__tag">Ad</span>
+            </div>
+            <h3 class="portfolio-card__title">Água da Pedra — Ad</h3>
+            <p class="portfolio-card__desc">Anúncio de produto com visual gerado por IA e composição para campanha digital.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/fusca-transformers.mp4" poster="assets/poster-fusca.jpg" aria-label="Fusca Transformers — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">VFX</span>
+              <span class="portfolio-card__tag">Trend</span>
+            </div>
+            <h3 class="portfolio-card__title">Fusca Transformers</h3>
+            <p class="portfolio-card__desc">Transformação com geração de vídeo por IA e composição VFX para conteúdo de alto engajamento.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/pipoca-yoki.mp4" poster="assets/poster-yoki.jpg" aria-label="Pipoca no Vulcão Yoki — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">VFX</span>
+              <span class="portfolio-card__tag">Social</span>
+            </div>
+            <h3 class="portfolio-card__title">Yoki — Pipoca no Vulcão</h3>
+            <p class="portfolio-card__desc">Criação visual com IA para conteúdo de marca em formato de trend para redes sociais.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card portfolio-card--grid" data-cursor="play">
+          <div class="portfolio-card__media">
+            <video class="portfolio-card__video" muted loop playsinline preload="none" data-src="videos/sheglam-ad.mp4" poster="assets/poster-sheglam.jpg" aria-label="Sheglam Ad — vídeo do projeto"></video>
+            <div class="portfolio-card__overlay">
+              <div class="portfolio-card__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <div class="portfolio-card__meta">
+              <span class="portfolio-card__tag">IA</span>
+              <span class="portfolio-card__tag">Beauty</span>
+              <span class="portfolio-card__tag">Ad</span>
+            </div>
+            <h3 class="portfolio-card__title">Sheglam — Beauty Ad</h3>
+            <p class="portfolio-card__desc">Anúncio para marca de beleza com visual gerado por IA e acabamento publicitário premium.</p>
+          </div>
+        </article>
+
+      </div><!-- /portfolio__grid -->
+
+      <div class="portfolio__cta reveal-up">
+        <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--primary">
+          Quero criar um projeto assim
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="sobre" id="sobre" aria-label="Sobre DG VFX">
+    <div class="container">
+      <div class="sobre__inner">
+        <div class="sobre__text reveal-up">
+          <span class="section-tag">Sobre</span>
+          <h2 class="section-title">IA, 3D e VFX.<br />Do zero ao vídeo final.</h2>
+          <p class="sobre__p">
+            Sou DG, especialista em criação visual que combina Inteligência Artificial, 3D, VFX e edição para entregar vídeos publicitários completos — prontos para redes sociais ou campanhas digitais.
+          </p>
+          <p class="sobre__p">
+            Não trabalho com IA isolada. A diferença está na integração: IA para acelerar ideias e gerar elementos impossíveis de produzir convencionalmente, combinada com composição e pós-produção para garantir controle técnico e acabamento profissional.
+          </p>
+          <p class="sobre__p">
+            O resultado é conteúdo visual que chama atenção, é difícil de ignorar — e funciona como publicidade real.
+          </p>
+          <div class="sobre__social">
+            <a href="https://www.instagram.com/dg_vfx" target="_blank" rel="noopener" class="sobre__social-link" aria-label="Ver Instagram @dg_vfx">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              @dg_vfx
+            </a>
+          </div>
+        </div>
+
+        <!-- FOTO -->
+        <div class="sobre__photo-wrap reveal-up">
+          <img
+            src="assets/dg-foto.jpg"
+            alt="DG — Especialista em IA, VFX e vídeos publicitários"
+            class="sobre__photo"
+            loading="lazy"
+            width="600"
+            height="800"
+          />
+        </div>
+
+        <div class="sobre__stack reveal-up">
+          <div class="stack-grid">
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">⚡</span>
+              <span>AI Video Generation</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">🔲</span>
+              <span>FOOH / CGI</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">🎯</span>
+              <span>3D & Lookdev</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">✦</span>
+              <span>VFX & Compositing</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">🎬</span>
+              <span>Video Editing</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">🎨</span>
+              <span>Color Grading</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">📱</span>
+              <span>Social Media Content</span>
+            </div>
+            <div class="stack-item">
+              <span class="stack-icon" aria-hidden="true">🔮</span>
+              <span>AI Image Generation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="servicos" id="servicos" aria-label="Serviços">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Serviços</span>
+        <h2 class="section-title">O que posso criar para você</h2>
+        <p class="section-sub">Cada projeto é desenvolvido do início ao fim — sem terceirizar o que importa.</p>
+      </div>
+
+      <div class="servicos__grid">
+
+        <div class="servico-card reveal-up">
+          <div class="servico-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <path d="M14 26V14l12 6-12 6z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">AI Video</h3>
+          <p class="servico-card__desc">Criação de vídeos com Inteligência Artificial para campanhas, anúncios e conteúdos digitais. Cenas que seriam impossíveis ou caríssimas de produzir de forma convencional.</p>
+          <span class="servico-card__tag">Sora · Runway · Kling · Hailuo</span>
+        </div>
+
+        <div class="servico-card reveal-up">
+          <div class="servico-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <rect x="11" y="11" width="8" height="8" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="21" y="21" width="8" height="8" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="19" y1="19" x2="21" y2="21" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">FOOH / CGI</h3>
+          <p class="servico-card__desc">Vídeos publicitários com elementos 3D hiperrealistas integrados a imagens ou ambientes reais. O formato mais impactante das redes sociais — feito do jeito certo.</p>
+          <span class="servico-card__tag">Blender · After Effects · Nuke</span>
+        </div>
+
+        <div class="servico-card reveal-up">
+          <div class="servico-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <polygon points="20,10 30,25 10,25" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">3D</h3>
+          <p class="servico-card__desc">Modelagem, lookdev, iluminação, animação e renderização de produtos e ambientes. Packshots 3D fotorrealistas e visuais de produto para anúncios digitais.</p>
+          <span class="servico-card__tag">Blender · Cinema 4D · Octane</span>
+        </div>
+
+        <div class="servico-card reveal-up">
+          <div class="servico-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <path d="M10 20 Q15 14 20 20 Q25 26 30 20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">VFX</h3>
+          <p class="servico-card__desc">Composição, tracking, integração de elementos digitais, efeitos visuais e pós-produção completa. Do simples ao complexo — sempre com acabamento publicitário.</p>
+          <span class="servico-card__tag">After Effects · Nuke · DaVinci</span>
+        </div>
+
+        <div class="servico-card reveal-up">
+          <div class="servico-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <rect x="10" y="16" width="20" height="10" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <line x1="14" y1="16" x2="14" y2="14" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="20" y1="16" x2="20" y2="12" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="26" y1="16" x2="26" y2="15" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">Video Editing</h3>
+          <p class="servico-card__desc">Edição, ritmo, sound design, color grading e finalização para plataformas. Vídeos com começo, meio e fim que prendem a atenção e entregam a mensagem.</p>
+          <span class="servico-card__tag">Premiere · DaVinci Resolve</span>
+        </div>
+
+        <div class="servico-card reveal-up">
+          <div class="servico-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <path d="M13 27 L20 13 L27 27" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">AI Creative</h3>
+          <p class="servico-card__desc">Criação de imagens, conceitos visuais, packshots, cenas publicitárias e conteúdo experimental com IA. Exploração criativa rápida para campanhas e apresentações.</p>
+          <span class="servico-card__tag">Midjourney · Firefly · Flux · SD</span>
+        </div>
+
+      </div>
+
+      <div class="servicos__cta reveal-up">
+        <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--outline">
+          Fale sobre o seu projeto →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="diferenciais" id="diferenciais" aria-label="Diferenciais">
+    <div class="container">
+      <div class="diferenciais__inner">
+        <div class="diferenciais__text reveal-up">
+          <span class="section-tag">Por que DG VFX</span>
+          <h2 class="section-title">Não é só IA.<br />É controle do início ao fim.</h2>
+          <p class="sobre__p">
+            Qualquer pessoa pode gerar um vídeo com IA hoje. O diferencial é saber o que fazer depois — composição, timing, cor, ritmo, integração com 3D e VFX. Essa é a diferença entre um conteúdo "gerado por IA" e uma peça publicitária real.
+          </p>
+          <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top: 2rem;">
+            Vamos criar algo
+          </a>
+        </div>
+
+        <div class="diferenciais__cards">
+          <div class="diff-card reveal-up">
+            <div class="diff-card__num">01</div>
+            <h4 class="diff-card__title">Produção completa</h4>
+            <p class="diff-card__desc">Da ideia ao arquivo final — sem precisar coordenar múltiplos fornecedores ou traduzir sua visão para outra pessoa executar.</p>
+          </div>
+
+          <div class="diff-card reveal-up">
+            <div class="diff-card__num">02</div>
+            <h4 class="diff-card__title">IA com técnica real</h4>
+            <p class="diff-card__desc">IA para acelerar e expandir o que é possível criar. 3D e VFX para refinar, compor e entregar com acabamento de produção profissional.</p>
+          </div>
+
+          <div class="diff-card reveal-up">
+            <div class="diff-card__num">03</div>
+            <h4 class="diff-card__title">Feito para redes sociais</h4>
+            <p class="diff-card__desc">Formatos verticais, ritmo adequado, visual que retém atenção. Conteúdo desenvolvido pensando em como o vídeo vai performar na plataforma.</p>
+          </div>
+
+          <div class="diff-card reveal-up">
+            <div class="diff-card__num">04</div>
+            <h4 class="diff-card__title">Viabilidade criativa</h4>
+            <p class="diff-card__desc">Cenas complexas, ambientes impossíveis, transformações e efeitos que seriam inviáveis com produção tradicional — a um custo muito menor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESSO ===================== -->
+  <section class="processo" id="processo" aria-label="Como funciona o processo de criação">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Processo</span>
+        <h2 class="section-title">Como um projeto funciona</h2>
+        <p class="section-sub">Simples, direto e sem burocracia desnecessária.</p>
+      </div>
+
+      <div class="processo__steps">
+        <div class="processo__step reveal-up">
+          <div class="processo__num" aria-hidden="true">01</div>
+          <div class="processo__content">
+            <h3 class="processo__title">Ideia & Briefing</h3>
+            <p class="processo__desc">Conversa direta para entender o projeto: objetivo, referências, plataforma, prazo e o que a marca precisa comunicar.</p>
+          </div>
+        </div>
+
+        <div class="processo__step reveal-up">
+          <div class="processo__num" aria-hidden="true">02</div>
+          <div class="processo__content">
+            <h3 class="processo__title">Direção visual</h3>
+            <p class="processo__desc">Definição de estética, paleta, linguagem e abordagem técnica — IA, FOOH, 3D, VFX ou a combinação que melhor atende a ideia.</p>
+          </div>
+        </div>
+
+        <div class="processo__step reveal-up">
+          <div class="processo__num" aria-hidden="true">03</div>
+          <div class="processo__content">
+            <h3 class="processo__title">Produção</h3>
+            <p class="processo__desc">Geração, modelagem, composição e edição. Toda a parte técnica executada internamente com controle total do processo.</p>
+          </div>
+        </div>
+
+        <div class="processo__step reveal-up">
+          <div class="processo__num" aria-hidden="true">04</div>
+          <div class="processo__content">
+            <h3 class="processo__title">Refinamento</h3>
+            <p class="processo__desc">Revisões focadas, ajustes de timing, cor, ritmo e acabamento final. O projeto só avança quando o resultado está certo.</p>
+          </div>
+        </div>
+
+        <div class="processo__step reveal-up">
+          <div class="processo__num" aria-hidden="true">05</div>
+          <div class="processo__content">
+            <h3 class="processo__title">Entrega</h3>
+            <p class="processo__desc">Arquivo final no formato e resolução certos para a plataforma — Reels, Stories, Shorts, anúncio ou campanha.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-final" id="contato" aria-label="Contato">
+    <div class="container">
+      <div class="cta-final__inner reveal-up">
+        <div class="cta-final__bg-glow" aria-hidden="true"></div>
+        <span class="section-tag">Contato</span>
+        <h2 class="cta-final__title">Tem uma ideia?<br /><em>Vamos colocar ela em movimento.</em></h2>
+        <p class="cta-final__sub">
+          Me conta o projeto — produto, campanha, trend, anúncio ou qualquer conteúdo visual que você precisa criar.<br />
+          Respondo rápido.
+        </p>
+
+        <div class="cta-final__btns">
+          <a href="https://wa.me/555180328211" target="_blank" rel="noopener" class="btn btn--primary btn--lg" aria-label="Abrir WhatsApp para falar sobre um projeto">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="https://www.instagram.com/dg_vfx" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" aria-label="Ver Instagram @dg_vfx">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Ver no Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo" aria-label="DG VFX — Topo da página">
+            <span class="nav__logo-text">DG</span>
+            <span class="nav__logo-tag">VFX</span>
+          </a>
+          <p class="footer__tagline">IA · 3D · VFX · Publicidade</p>
+        </div>
+
+        <div class="footer__links">
+          <a href="#portfolio">Portfólio</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer__social">
+          <a href="https://www.instagram.com/dg_vfx" target="_blank" rel="noopener" aria-label="Instagram @dg_vfx">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/555180328211" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 DG VFX. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== VIDEO MODAL ===================== -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Vídeo do projeto" hidden>
+    <button class="video-modal__close" id="modalClose" aria-label="Fechar vídeo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="video-modal__inner">
+      <video class="video-modal__video" id="modalVideo" controls playsinline></video>
+    </div>
+  </div>
+
+  <!-- Cursor personalizado (desktop only) -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
